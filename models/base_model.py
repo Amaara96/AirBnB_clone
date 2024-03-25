@@ -7,9 +7,15 @@ import uuid
 from datetime import datetime
 
 class BaseModel:
-	def __init__(self):
-		self.id = str(uuid.uuid())
-
+	def __init__(self *args, **kwargs):
+		time_format = "%Y-%m-%dT%H:%M:%S.%f"
+		if kwargs:
+		for key, value in kwargs.item()
+			if key == "__class__":
+				continue
+			elif key == "created_at" or key == "updated_at":
+			setattr(self,key, datetime
+		self.id = str(uuid.uuid()
 		self.created_at = datetime.utcnow()
 		self.updated_at = datetime.utcnow()
 
@@ -34,7 +40,7 @@ class BaseModel:
 		"""
 
 		"""
-		class_name = self.__class__.name__
+		class_name = self.__class__.__name__
 		return "[{}] ({}) {}".format(class_name, self.id, self.__dict__)
 
 if __name__ == "__main__":
