@@ -1,10 +1,12 @@
-*{
-    padding: 0px;
-    margin: 0px;
+html{
+    position: relative;
+    min-height: 100vh;
     box-sizing: 0px;
 }
 
 body{
+    padding: 0px;
+    margin: 0px;
     color: #484848;
     font-size: 14px;
     font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
